@@ -1,0 +1,5043 @@
+{
+  "$schema": "https://stencila.org/v2.0.0-beta.26/Article.schema.json",
+  "@context": "https://stencila.org/v2.0.0-beta.26/context.jsonld",
+  "type": "Article",
+  "authors": [
+    {
+      "type": "AuthorRole",
+      "author": {
+        "type": "Person",
+        "affiliations": [],
+        "name": "CagyPegasus"
+      },
+      "roleName": "Writer",
+      "format": "LaTeX",
+      "lastModified": {
+        "type": "Timestamp",
+        "value": 1739914705107,
+        "timeUnit": "Millisecond"
+      }
+    }
+  ],
+  "provenance": [
+    {
+      "type": "ProvenanceCount",
+      "provenanceCategory": "Hw",
+      "characterCount": 3980,
+      "characterPercent": 99
+    },
+    {
+      "type": "ProvenanceCount",
+      "provenanceCategory": "HwHe",
+      "characterCount": 34,
+      "characterPercent": 1
+    }
+  ],
+  "headings": {
+    "type": "List",
+    "items": [
+      {
+        "type": "ListItem",
+        "content": [
+          {
+            "type": "Paragraph",
+            "content": [
+              {
+                "type": "Link",
+                "content": [
+                  {
+                    "type": "Text",
+                    "value": {
+                      "string": "Introduction",
+                      "authorship": [
+                        [
+                          1,
+                          0,
+                          0,
+                          12
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                "target": "#hea_RYGVU8nQmQtEKz98NYMUHg"
+              }
+            ],
+            "provenance": [
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "Hw",
+                "characterCount": 12,
+                "characterPercent": 100
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "ListItem",
+        "content": [
+          {
+            "type": "Paragraph",
+            "content": [
+              {
+                "type": "Link",
+                "content": [
+                  {
+                    "type": "Text",
+                    "value": {
+                      "string": "Classification Exercise",
+                      "authorship": [
+                        [
+                          1,
+                          0,
+                          0,
+                          23
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                "target": "#hea_N7acAqz79yeULeNZgVJi7o"
+              }
+            ],
+            "provenance": [
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "Hw",
+                "characterCount": 23,
+                "characterPercent": 100
+              }
+            ]
+          },
+          {
+            "type": "List",
+            "items": [
+              {
+                "type": "ListItem",
+                "content": [
+                  {
+                    "type": "Paragraph",
+                    "content": [
+                      {
+                        "type": "Link",
+                        "content": [
+                          {
+                            "type": "Text",
+                            "value": {
+                              "string": "General Steps to Utilize and Train the Model",
+                              "authorship": [
+                                [
+                                  1,
+                                  0,
+                                  0,
+                                  17
+                                ],
+                                [
+                                  2,
+                                  255,
+                                  2,
+                                  1
+                                ],
+                                [
+                                  1,
+                                  0,
+                                  0,
+                                  11
+                                ],
+                                [
+                                  2,
+                                  255,
+                                  2,
+                                  1
+                                ],
+                                [
+                                  1,
+                                  0,
+                                  0,
+                                  9
+                                ],
+                                [
+                                  2,
+                                  255,
+                                  2,
+                                  1
+                                ],
+                                [
+                                  1,
+                                  0,
+                                  0,
+                                  4
+                                ]
+                              ]
+                            }
+                          }
+                        ],
+                        "target": "#hea_PHig1kzZAcH7DwHi7jJVX5"
+                      }
+                    ],
+                    "provenance": [
+                      {
+                        "type": "ProvenanceCount",
+                        "provenanceCategory": "Hw",
+                        "characterCount": 41,
+                        "characterPercent": 93
+                      },
+                      {
+                        "type": "ProvenanceCount",
+                        "provenanceCategory": "HwHe",
+                        "characterCount": 3,
+                        "characterPercent": 7
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "ListItem",
+                "content": [
+                  {
+                    "type": "Paragraph",
+                    "content": [
+                      {
+                        "type": "Link",
+                        "content": [
+                          {
+                            "type": "Text",
+                            "value": {
+                              "string": "How it Works",
+                              "authorship": [
+                                [
+                                  1,
+                                  0,
+                                  0,
+                                  7
+                                ],
+                                [
+                                  2,
+                                  255,
+                                  2,
+                                  1
+                                ],
+                                [
+                                  1,
+                                  0,
+                                  0,
+                                  4
+                                ]
+                              ]
+                            }
+                          }
+                        ],
+                        "target": "#hea_K84CwFtpj7gncpD9wy8sYt"
+                      }
+                    ],
+                    "provenance": [
+                      {
+                        "type": "ProvenanceCount",
+                        "provenanceCategory": "Hw",
+                        "characterCount": 11,
+                        "characterPercent": 92
+                      },
+                      {
+                        "type": "ProvenanceCount",
+                        "provenanceCategory": "HwHe",
+                        "characterCount": 1,
+                        "characterPercent": 8
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "order": "Ascending",
+            "provenance": [
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "Hw",
+                "characterCount": 52,
+                "characterPercent": 93
+              },
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "HwHe",
+                "characterCount": 4,
+                "characterPercent": 7
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "ListItem",
+        "content": [
+          {
+            "type": "Paragraph",
+            "content": [
+              {
+                "type": "Link",
+                "content": [
+                  {
+                    "type": "Text",
+                    "value": {
+                      "string": "Definition of AI",
+                      "authorship": [
+                        [
+                          1,
+                          0,
+                          0,
+                          16
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                "target": "#hea_BnVEfZVULfQTaQQ1jdGBxB"
+              }
+            ],
+            "provenance": [
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "Hw",
+                "characterCount": 16,
+                "characterPercent": 100
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "ListItem",
+        "content": [
+          {
+            "type": "Paragraph",
+            "content": [
+              {
+                "type": "Link",
+                "content": [
+                  {
+                    "type": "Text",
+                    "value": {
+                      "string": "ML with Big Data",
+                      "authorship": [
+                        [
+                          1,
+                          0,
+                          0,
+                          16
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                "target": "#hea_3NEWGkvsX8YvzGtRP9zSUj"
+              }
+            ],
+            "provenance": [
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "Hw",
+                "characterCount": 16,
+                "characterPercent": 100
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "ListItem",
+        "content": [
+          {
+            "type": "Paragraph",
+            "content": [
+              {
+                "type": "Link",
+                "content": [
+                  {
+                    "type": "Text",
+                    "value": {
+                      "string": "Two-Layer Neural Network",
+                      "authorship": [
+                        [
+                          2,
+                          255,
+                          2,
+                          6
+                        ],
+                        [
+                          1,
+                          255,
+                          0,
+                          18
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                "target": "#hea_D78hoerFK3okZg86doddqD"
+              }
+            ],
+            "provenance": [
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "HwHe",
+                "characterCount": 6,
+                "characterPercent": 25
+              },
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "Hw",
+                "characterCount": 18,
+                "characterPercent": 75
+              }
+            ]
+          },
+          {
+            "type": "List",
+            "items": [
+              {
+                "type": "ListItem",
+                "content": [
+                  {
+                    "type": "Paragraph",
+                    "content": [
+                      {
+                        "type": "Link",
+                        "content": [
+                          {
+                            "type": "Text",
+                            "value": {
+                              "string": "Simple Neural Network Model",
+                              "authorship": [
+                                [
+                                  1,
+                                  0,
+                                  0,
+                                  9
+                                ],
+                                [
+                                  1,
+                                  255,
+                                  0,
+                                  18
+                                ]
+                              ]
+                            }
+                          }
+                        ],
+                        "target": "#hea_AbSNu6ejHmC9jWY4z5F67g"
+                      }
+                    ],
+                    "provenance": [
+                      {
+                        "type": "ProvenanceCount",
+                        "provenanceCategory": "Hw",
+                        "characterCount": 27,
+                        "characterPercent": 100
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "type": "ListItem",
+                "content": [
+                  {
+                    "type": "Paragraph",
+                    "content": [
+                      {
+                        "type": "Link",
+                        "content": [
+                          {
+                            "type": "Text",
+                            "value": {
+                              "string": "Stochastic Gradient Descent",
+                              "authorship": [
+                                [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ],
+                                [
+                                  1,
+                                  255,
+                                  0,
+                                  7
+                                ],
+                                [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ],
+                                [
+                                  2,
+                                  255,
+                                  2,
+                                  1
+                                ],
+                                [
+                                  1,
+                                  0,
+                                  0,
+                                  1
+                                ],
+                                [
+                                  2,
+                                  255,
+                                  2,
+                                  2
+                                ],
+                                [
+                                  1,
+                                  255,
+                                  0,
+                                  15
+                                ]
+                              ]
+                            }
+                          }
+                        ],
+                        "target": "#hea_PfZ7mAYgHxv1qqNED99n4y"
+                      }
+                    ],
+                    "provenance": [
+                      {
+                        "type": "ProvenanceCount",
+                        "provenanceCategory": "Hw",
+                        "characterCount": 25,
+                        "characterPercent": 89
+                      },
+                      {
+                        "type": "ProvenanceCount",
+                        "provenanceCategory": "HwHe",
+                        "characterCount": 3,
+                        "characterPercent": 11
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "order": "Ascending",
+            "provenance": [
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "Hw",
+                "characterCount": 52,
+                "characterPercent": 95
+              },
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "HwHe",
+                "characterCount": 3,
+                "characterPercent": 5
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "type": "ListItem",
+        "content": [
+          {
+            "type": "Paragraph",
+            "content": [
+              {
+                "type": "Link",
+                "content": [
+                  {
+                    "type": "Text",
+                    "value": {
+                      "string": "Parts of a Neural Network",
+                      "authorship": [
+                        [
+                          2,
+                          255,
+                          2,
+                          3
+                        ],
+                        [
+                          1,
+                          0,
+                          0,
+                          1
+                        ],
+                        [
+                          2,
+                          255,
+                          2,
+                          2
+                        ],
+                        [
+                          1,
+                          0,
+                          0,
+                          1
+                        ],
+                        [
+                          2,
+                          255,
+                          2,
+                          6
+                        ],
+                        [
+                          1,
+                          0,
+                          0,
+                          1
+                        ],
+                        [
+                          2,
+                          255,
+                          2,
+                          6
+                        ],
+                        [
+                          1,
+                          0,
+                          0,
+                          1
+                        ],
+                        [
+                          2,
+                          255,
+                          2,
+                          1
+                        ],
+                        [
+                          1,
+                          0,
+                          0,
+                          1
+                        ],
+                        [
+                          2,
+                          255,
+                          2,
+                          2
+                        ]
+                      ]
+                    }
+                  }
+                ],
+                "target": "#hea_BhER5p56kkx1AJqyGWXL1H"
+              }
+            ],
+            "provenance": [
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "HwHe",
+                "characterCount": 20,
+                "characterPercent": 80
+              },
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "Hw",
+                "characterCount": 5,
+                "characterPercent": 20
+              }
+            ]
+          },
+          {
+            "type": "List",
+            "items": [
+              {
+                "type": "ListItem",
+                "content": [
+                  {
+                    "type": "Paragraph",
+                    "content": [
+                      {
+                        "type": "Link",
+                        "content": [
+                          {
+                            "type": "Text",
+                            "value": {
+                              "string": "Layers",
+                              "authorship": [
+                                [
+                                  2,
+                                  255,
+                                  2,
+                                  1
+                                ],
+                                [
+                                  1,
+                                  255,
+                                  0,
+                                  5
+                                ]
+                              ]
+                            }
+                          }
+                        ],
+                        "target": "#hea_HjJCBQj8To6uzq7cGrkxKb"
+                      }
+                    ],
+                    "provenance": [
+                      {
+                        "type": "ProvenanceCount",
+                        "provenanceCategory": "HwHe",
+                        "characterCount": 1,
+                        "characterPercent": 17
+                      },
+                      {
+                        "type": "ProvenanceCount",
+                        "provenanceCategory": "Hw",
+                        "characterCount": 5,
+                        "characterPercent": 83
+                      }
+                    ]
+                  },
+                  {
+                    "type": "List",
+                    "items": [
+                      {
+                        "type": "ListItem",
+                        "content": [
+                          {
+                            "type": "Paragraph",
+                            "content": [
+                              {
+                                "type": "Link",
+                                "content": [
+                                  {
+                                    "type": "Text",
+                                    "value": {
+                                      "string": "Abstract Layer",
+                                      "authorship": [
+                                        [
+                                          1,
+                                          0,
+                                          0,
+                                          1
+                                        ],
+                                        [
+                                          1,
+                                          255,
+                                          0,
+                                          13
+                                        ]
+                                      ]
+                                    }
+                                  }
+                                ],
+                                "target": "#hea_XSAeabYNTdSFU4ZVmWLuM"
+                              }
+                            ],
+                            "provenance": [
+                              {
+                                "type": "ProvenanceCount",
+                                "provenanceCategory": "Hw",
+                                "characterCount": 14,
+                                "characterPercent": 100
+                              }
+                            ]
+                          }
+                        ]
+                      }
+                    ],
+                    "order": "Ascending",
+                    "provenance": [
+                      {
+                        "type": "ProvenanceCount",
+                        "provenanceCategory": "Hw",
+                        "characterCount": 14,
+                        "characterPercent": 100
+                      }
+                    ]
+                  }
+                ]
+              }
+            ],
+            "order": "Ascending",
+            "provenance": [
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "HwHe",
+                "characterCount": 1,
+                "characterPercent": 5
+              },
+              {
+                "type": "ProvenanceCount",
+                "provenanceCategory": "Hw",
+                "characterCount": 19,
+                "characterPercent": 95
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "order": "Ascending",
+    "provenance": [
+      {
+        "type": "ProvenanceCount",
+        "provenanceCategory": "HwHe",
+        "characterCount": 34,
+        "characterPercent": 14
+      },
+      {
+        "type": "ProvenanceCount",
+        "provenanceCategory": "Hw",
+        "characterCount": 213,
+        "characterPercent": 86
+      }
+    ]
+  },
+  "content": [
+    {
+      "type": "Heading",
+      "level": 1,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Introduction",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                12
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739903844761,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 12,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "This section will go over the basic machine learning algorithms. Machine Learning (ML) is a subfield of AI, which focuses on studying the methods that can be used to improve the performance of a model over time.",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                211
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739903844761,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 211,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Heading",
+      "level": 1,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Classification Exercise",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                23
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739903844761,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 23,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Heading",
+      "level": 2,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "General Steps to Utilize and Train the Model",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                44
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739904242238,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 44,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "List",
+      "items": [
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": "Load the dataset.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        17
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 17,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": "Split the dataset into training and testing sets.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        49
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 49,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": "Train the model.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        16
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 16,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": "Evaluate the model performance.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        31
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 31,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "order": "Ascending",
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914413194,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 113,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "In this exercise, we are using the ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                35
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Strong",
+          "content": [
+            {
+              "type": "Text",
+              "value": {
+                "string": "Decision Tree Classifier",
+                "authorship": [
+                  [
+                    1,
+                    0,
+                    0,
+                    24
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " algorithm.",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                11
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739904242238,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 70,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Heading",
+      "level": 2,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "How it Works",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                12
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739904242238,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 12,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "The algorithm tries to find the best way to split the data at each step based on the features. It looks for the splits that maximize the separation based on a feature. The best split is decided by ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                197
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Strong",
+          "content": [
+            {
+              "type": "Text",
+              "value": {
+                "string": "Entropy",
+                "authorship": [
+                  [
+                    1,
+                    0,
+                    0,
+                    7
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": ", which is a metric used for information gain. ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                47
+              ]
+            ]
+          }
+        },
+        {
+          "type": "Strong",
+          "content": [
+            {
+              "type": "Text",
+              "value": {
+                "string": "Note:",
+                "authorship": [
+                  [
+                    1,
+                    0,
+                    0,
+                    5
+                  ]
+                ]
+              }
+            }
+          ]
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " A low entropy value indicates that the data in that split is homogeneous, which is desired in a classification task.",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                117
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739904242238,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 373,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "StyledBlock",
+      "code": {
+        "string": "center",
+        "authorship": [
+          [
+            1,
+            0,
+            0,
+            6
+          ]
+        ]
+      },
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739903844761,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 6,
+          "characterPercent": 100
+        }
+      ],
+      "content": [],
+      "compilationDigest": {
+        "type": "CompilationDigest",
+        "stateDigest": 15895585170536187532
+      },
+      "compilationMessages": [
+        {
+          "type": "CompilationMessage",
+          "level": "Warning",
+          "message": "Could not match class 'center'",
+          "codeLocation": {
+            "type": "CodeLocation",
+            "startLine": 0,
+            "startColumn": 0
+          }
+        }
+      ],
+      "css": "\n",
+      "classList": "center"
+    },
+    {
+      "type": "Heading",
+      "level": 1,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Definition of AI",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                16
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739903844761,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 16,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "List",
+      "items": [
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Artificial Intelligence:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            24
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " Intelligence exhibited by machines.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        36
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 60,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "High-Profile Applications:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            26
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 26,
+                  "characterPercent": 100
+                }
+              ]
+            },
+            {
+              "type": "List",
+              "items": [
+                {
+                  "type": "ListItem",
+                  "content": [
+                    {
+                      "type": "Paragraph",
+                      "content": [
+                        {
+                          "type": "Text",
+                          "value": {
+                            "string": "Advanced web search engines",
+                            "authorship": [
+                              [
+                                1,
+                                0,
+                                0,
+                                27
+                              ]
+                            ]
+                          }
+                        }
+                      ],
+                      "authors": [
+                        {
+                          "type": "AuthorRole",
+                          "author": {
+                            "type": "Person",
+                            "affiliations": [],
+                            "name": "CagyPegasus"
+                          },
+                          "roleName": "Writer",
+                          "format": "LaTeX",
+                          "lastModified": {
+                            "type": "Timestamp",
+                            "value": 1739904242238,
+                            "timeUnit": "Millisecond"
+                          }
+                        }
+                      ],
+                      "provenance": [
+                        {
+                          "type": "ProvenanceCount",
+                          "provenanceCategory": "Hw",
+                          "characterCount": 27,
+                          "characterPercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "ListItem",
+                  "content": [
+                    {
+                      "type": "Paragraph",
+                      "content": [
+                        {
+                          "type": "Text",
+                          "value": {
+                            "string": "Recommendation systems",
+                            "authorship": [
+                              [
+                                1,
+                                0,
+                                0,
+                                22
+                              ]
+                            ]
+                          }
+                        }
+                      ],
+                      "authors": [
+                        {
+                          "type": "AuthorRole",
+                          "author": {
+                            "type": "Person",
+                            "affiliations": [],
+                            "name": "CagyPegasus"
+                          },
+                          "roleName": "Writer",
+                          "format": "LaTeX",
+                          "lastModified": {
+                            "type": "Timestamp",
+                            "value": 1739904242238,
+                            "timeUnit": "Millisecond"
+                          }
+                        }
+                      ],
+                      "provenance": [
+                        {
+                          "type": "ProvenanceCount",
+                          "provenanceCategory": "Hw",
+                          "characterCount": 22,
+                          "characterPercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "ListItem",
+                  "content": [
+                    {
+                      "type": "Paragraph",
+                      "content": [
+                        {
+                          "type": "Text",
+                          "value": {
+                            "string": "Virtual assistants",
+                            "authorship": [
+                              [
+                                1,
+                                0,
+                                0,
+                                18
+                              ]
+                            ]
+                          }
+                        }
+                      ],
+                      "authors": [
+                        {
+                          "type": "AuthorRole",
+                          "author": {
+                            "type": "Person",
+                            "affiliations": [],
+                            "name": "CagyPegasus"
+                          },
+                          "roleName": "Writer",
+                          "format": "LaTeX",
+                          "lastModified": {
+                            "type": "Timestamp",
+                            "value": 1739904242238,
+                            "timeUnit": "Millisecond"
+                          }
+                        }
+                      ],
+                      "provenance": [
+                        {
+                          "type": "ProvenanceCount",
+                          "provenanceCategory": "Hw",
+                          "characterCount": 18,
+                          "characterPercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "ListItem",
+                  "content": [
+                    {
+                      "type": "Paragraph",
+                      "content": [
+                        {
+                          "type": "Text",
+                          "value": {
+                            "string": "Autonomous driving",
+                            "authorship": [
+                              [
+                                1,
+                                0,
+                                0,
+                                18
+                              ]
+                            ]
+                          }
+                        }
+                      ],
+                      "authors": [
+                        {
+                          "type": "AuthorRole",
+                          "author": {
+                            "type": "Person",
+                            "affiliations": [],
+                            "name": "CagyPegasus"
+                          },
+                          "roleName": "Writer",
+                          "format": "LaTeX",
+                          "lastModified": {
+                            "type": "Timestamp",
+                            "value": 1739904242238,
+                            "timeUnit": "Millisecond"
+                          }
+                        }
+                      ],
+                      "provenance": [
+                        {
+                          "type": "ProvenanceCount",
+                          "provenanceCategory": "Hw",
+                          "characterCount": 18,
+                          "characterPercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "ListItem",
+                  "content": [
+                    {
+                      "type": "Paragraph",
+                      "content": [
+                        {
+                          "type": "Text",
+                          "value": {
+                            "string": "Generative and creative tools",
+                            "authorship": [
+                              [
+                                1,
+                                0,
+                                0,
+                                29
+                              ]
+                            ]
+                          }
+                        }
+                      ],
+                      "authors": [
+                        {
+                          "type": "AuthorRole",
+                          "author": {
+                            "type": "Person",
+                            "affiliations": [],
+                            "name": "CagyPegasus"
+                          },
+                          "roleName": "Writer",
+                          "format": "LaTeX",
+                          "lastModified": {
+                            "type": "Timestamp",
+                            "value": 1739904242238,
+                            "timeUnit": "Millisecond"
+                          }
+                        }
+                      ],
+                      "provenance": [
+                        {
+                          "type": "ProvenanceCount",
+                          "provenanceCategory": "Hw",
+                          "characterCount": 29,
+                          "characterPercent": 100
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "order": "Unordered",
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 114,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Machine Learning:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            17
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " A subset of AI that focuses on algorithms that allow computers to learn from data.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        85
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 102,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Deep Learning:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            14
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " A subset of Machine Learning that utilizes artificial neural networks with multiple layers.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        92
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 106,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "order": "Unordered",
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739904242238,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 408,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Heading",
+      "level": 1,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "ML with Big Data",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                16
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739903844761,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 16,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "List",
+      "items": [
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Observed Input-Output Mapping:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            30
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " Observe some outputs ",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        22
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "type": "MathInline",
+                  "code": {
+                    "string": "y_1, ... , y_T",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        14
+                      ]
+                    ]
+                  },
+                  "mathLanguage": "tex",
+                  "authors": [
+                    {
+                      "type": "AuthorRole",
+                      "author": {
+                        "type": "Person",
+                        "affiliations": [],
+                        "name": "CagyPegasus"
+                      },
+                      "roleName": "Writer",
+                      "format": "LaTeX",
+                      "lastModified": {
+                        "type": "Timestamp",
+                        "value": 1739903844761,
+                        "timeUnit": "Millisecond"
+                      }
+                    }
+                  ],
+                  "provenance": [
+                    {
+                      "type": "ProvenanceCount",
+                      "provenanceCategory": "Hw",
+                      "characterCount": 14,
+                      "characterPercent": 100
+                    }
+                  ],
+                  "compilationDigest": {
+                    "type": "CompilationDigest",
+                    "stateDigest": 12221411896527160115
+                  },
+                  "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><msub><mi>y</mi><mn>1</mn></msub><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>,</mo><msub><mi>y</mi><mi>T</mi></msub></math>"
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " corresponding to input feature vectors ",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        40
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "type": "MathInline",
+                  "code": {
+                    "string": "x_1, ..., x_T",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        13
+                      ]
+                    ]
+                  },
+                  "mathLanguage": "tex",
+                  "authors": [
+                    {
+                      "type": "AuthorRole",
+                      "author": {
+                        "type": "Person",
+                        "affiliations": [],
+                        "name": "CagyPegasus"
+                      },
+                      "roleName": "Writer",
+                      "format": "LaTeX",
+                      "lastModified": {
+                        "type": "Timestamp",
+                        "value": 1739903844761,
+                        "timeUnit": "Millisecond"
+                      }
+                    }
+                  ],
+                  "provenance": [
+                    {
+                      "type": "ProvenanceCount",
+                      "provenanceCategory": "Hw",
+                      "characterCount": 13,
+                      "characterPercent": 100
+                    }
+                  ],
+                  "compilationDigest": {
+                    "type": "CompilationDigest",
+                    "stateDigest": 10470766262530806660
+                  },
+                  "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><msub><mi>x</mi><mn>1</mn></msub><mo>,</mo><mo>.</mo><mo>.</mo><mo>.</mo><mo>,</mo><msub><mi>x</mi><mi>T</mi></msub></math>"
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": ".",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        1
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 120,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Prediction:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            11
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " A predictive model that takes in the input vectors and outputs a predictive value.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        83
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 94,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Supervised Learning:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            20
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " Learning an input-output mapping based on labeled data.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        56
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 76,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Unsupervised Learning:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            22
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " Learning patterns from data without labeled outputs.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        53
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 75,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Features:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            9
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " The inputs.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        12
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 21,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Training:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            9
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " The act of using data to find the best model.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        46
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739903844761,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 55,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Loss Function:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            14
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " A function that assesses model quality, such as Mean Squared Error (MSE): ",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        75
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "type": "MathInline",
+                  "code": {
+                    "string": "L = \\frac{1}{T} \\sum_{i=1}^{T} (y_i - \\hat{y}_i)^2",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        50
+                      ]
+                    ]
+                  },
+                  "mathLanguage": "tex",
+                  "authors": [
+                    {
+                      "type": "AuthorRole",
+                      "author": {
+                        "type": "Person",
+                        "affiliations": [],
+                        "name": "CagyPegasus"
+                      },
+                      "roleName": "Writer",
+                      "format": "LaTeX",
+                      "lastModified": {
+                        "type": "Timestamp",
+                        "value": 1739904242238,
+                        "timeUnit": "Millisecond"
+                      }
+                    }
+                  ],
+                  "provenance": [
+                    {
+                      "type": "ProvenanceCount",
+                      "provenanceCategory": "Hw",
+                      "characterCount": 50,
+                      "characterPercent": 100
+                    }
+                  ],
+                  "compilationDigest": {
+                    "type": "CompilationDigest",
+                    "stateDigest": 14358057815784339654
+                  },
+                  "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>L</mi><mo>=</mo><mfrac><mn>1</mn><mi>T</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>-</mo><mover><msub><mi>y</mi><mi>i</mi></msub><mo accent=\"true\">^</mo></mover><msup><mo>)</mo><mn>2</mn></msup></math>"
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " For classification, a common loss function is Cross-Entropy Loss: ",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        67
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "type": "MathInline",
+                  "code": {
+                    "string": "L = -\\sum_{i=1}^{T} \\left[ y_i \\log(\\hat{y}_i) + (1 - y_i) \\log(1 - \\hat{y}_i) \\right]",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        86
+                      ]
+                    ]
+                  },
+                  "mathLanguage": "tex",
+                  "authors": [
+                    {
+                      "type": "AuthorRole",
+                      "author": {
+                        "type": "Person",
+                        "affiliations": [],
+                        "name": "CagyPegasus"
+                      },
+                      "roleName": "Writer",
+                      "format": "LaTeX",
+                      "lastModified": {
+                        "type": "Timestamp",
+                        "value": 1739904242238,
+                        "timeUnit": "Millisecond"
+                      }
+                    }
+                  ],
+                  "provenance": [
+                    {
+                      "type": "ProvenanceCount",
+                      "provenanceCategory": "Hw",
+                      "characterCount": 86,
+                      "characterPercent": 100
+                    }
+                  ],
+                  "compilationDigest": {
+                    "type": "CompilationDigest",
+                    "stateDigest": 8152651493305355858
+                  },
+                  "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>L</mi><mo>=</mo><mo>-</mo><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>T</mi></munderover><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mrow><msub><mi>y</mi><mi>i</mi></msub><mi>log</mi><mo>(</mo><mover><msub><mi>y</mi><mi>i</mi></msub><mo accent=\"true\">^</mo></mover><mo>)</mo><mo>+</mo><mo>(</mo><mn>1</mn><mo>-</mo><msub><mi>y</mi><mi>i</mi></msub><mo>)</mo><mi>log</mi><mo>(</mo><mn>1</mn><mo>-</mo><mover><msub><mi>y</mi><mi>i</mi></msub><mo accent=\"true\">^</mo></mover><mo>)</mo></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></math>"
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739904242238,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 292,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "order": "Ascending",
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739904242238,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 733,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Heading",
+      "level": 1,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Two-Layer Neural Network",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                24
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739904242238,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 24,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "A neural network aims to learn an underlying function from input data to output predictions. The basic formulation involves learning a function: ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                145
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "y_i = f(x_i) + z_i",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                18
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739904018618,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 18,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 7476172185259155298
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><msub><mi>y</mi><mi>i</mi></msub><mo>=</mo><mi>f</mi><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>)</mo><mo>+</mo><msub><mi>z</mi><mi>i</mi></msub></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " where ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                7
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "z_i",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                3
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914413194,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 3,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 14226914685399125691
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><msub><mi>z</mi><mi>i</mi></msub></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " represents noise.",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                18
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914413194,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 191,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "For example, fitting a polynomial of degree ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                44
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "k",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                1
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914440070,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 1,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 16774390020124855313
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>k</mi></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": ": ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                3
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "f(x, \\theta) = \\sum_{|\\alpha| \\leq k} \\theta_{\\alpha} x^{\\alpha}",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                64
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914440070,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 64,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 5673712843569855848
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>f</mi><mo>(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo>)</mo><mo>=</mo><munder><mo>∑</mo><mrow><mo>|</mo><mi>α</mi><mo>|</mo><mo>≤</mo><mi>k</mi></mrow></munder><msub><mi>θ</mi><mi>α</mi></msub><msup><mi>x</mi><mi>α</mi></msup></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " where ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                7
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "\\alpha",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                6
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914440070,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 6,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 5896961096261067444
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>α</mi></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " represents a multi-index over feature dimensions.",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                50
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914440070,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 175,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "To evaluate model quality, we define the expected risk: ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                56
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "R(\\theta) = \\mathbb{E}\\left[(f(x) - f(x,\\theta))^2\\right]",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                57
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914440070,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 57,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 9937112240226926147
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>R</mi><mo>(</mo><mi>θ</mi><mo>)</mo><mo>=</mo><mi mathvariant=\"double-struck\">E</mi><mrow><mo stretchy=\"true\" form=\"prefix\">[</mo><mrow><mo>(</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>-</mo><mi>f</mi><mo>(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo>)</mo><msup><mo>)</mo><mn>2</mn></msup></mrow><mo stretchy=\"true\" form=\"postfix\">]</mo></mrow></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " and the empirical risk based on observed data: ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                48
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "R_n(\\theta) = \\frac{1}{n}\\sum_{i=1}^{n} (y_i - \\hat{f}(x_i,\\theta))^2.",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                70
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914440070,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 70,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 2131815955921955662
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><msub><mi>R</mi><mi>n</mi></msub><mo>(</mo><mi>θ</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>-</mo><mover><mi>f</mi><mo accent=\"true\">^</mo></mover><mo>(</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><mi>θ</mi><mo>)</mo><msup><mo>)</mo><mn>2.</mn></msup></math>"
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914440070,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 231,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Heading",
+      "level": 2,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Simple Neural Network Model",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                27
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739904712403,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 27,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "A simple neural network approximates the function using multiple neurons: ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                74
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "\\hat{f}(x,\\theta) = \\frac{1}{N}\\sum_{i=1}^{N} \\sigma(x,\\theta_i)",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                64
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914413194,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 64,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 17136600192621936763
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mover><mi>f</mi><mo accent=\"true\">^</mo></mover><mo>(</mo><mi>x</mi><mo>,</mo><mi>θ</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mi>N</mi></mfrac><munderover><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>N</mi></munderover><mi>σ</mi><mo>(</mo><mi>x</mi><mo>,</mo><msub><mi>θ</mi><mi>i</mi></msub><mo>)</mo></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " where:",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                7
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914413194,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 145,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "List",
+      "items": [
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "MathInline",
+                  "code": {
+                    "string": "N",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        1
+                      ]
+                    ]
+                  },
+                  "mathLanguage": "tex",
+                  "authors": [
+                    {
+                      "type": "AuthorRole",
+                      "author": {
+                        "type": "Person",
+                        "affiliations": [],
+                        "name": "CagyPegasus"
+                      },
+                      "roleName": "Writer",
+                      "format": "LaTeX",
+                      "lastModified": {
+                        "type": "Timestamp",
+                        "value": 1739914413194,
+                        "timeUnit": "Millisecond"
+                      }
+                    }
+                  ],
+                  "provenance": [
+                    {
+                      "type": "ProvenanceCount",
+                      "provenanceCategory": "Hw",
+                      "characterCount": 1,
+                      "characterPercent": 100
+                    }
+                  ],
+                  "compilationDigest": {
+                    "type": "CompilationDigest",
+                    "stateDigest": 643615791106301586
+                  },
+                  "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>N</mi></math>"
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " is the number of neurons (hidden units),",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        41
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 42,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "MathInline",
+                  "code": {
+                    "string": "\\sigma(x,\\theta_i)",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        18
+                      ]
+                    ]
+                  },
+                  "mathLanguage": "tex",
+                  "authors": [
+                    {
+                      "type": "AuthorRole",
+                      "author": {
+                        "type": "Person",
+                        "affiliations": [],
+                        "name": "CagyPegasus"
+                      },
+                      "roleName": "Writer",
+                      "format": "LaTeX",
+                      "lastModified": {
+                        "type": "Timestamp",
+                        "value": 1739914413194,
+                        "timeUnit": "Millisecond"
+                      }
+                    }
+                  ],
+                  "provenance": [
+                    {
+                      "type": "ProvenanceCount",
+                      "provenanceCategory": "Hw",
+                      "characterCount": 18,
+                      "characterPercent": 100
+                    }
+                  ],
+                  "compilationDigest": {
+                    "type": "CompilationDigest",
+                    "stateDigest": 2144636176342609091
+                  },
+                  "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>σ</mi><mo>(</mo><mi>x</mi><mo>,</mo><msub><mi>θ</mi><mi>i</mi></msub><mo>)</mo></math>"
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " is the activation function applied to each neuron,",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        51
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 69,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "MathInline",
+                  "code": {
+                    "string": "\\theta",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        6
+                      ]
+                    ]
+                  },
+                  "mathLanguage": "tex",
+                  "authors": [
+                    {
+                      "type": "AuthorRole",
+                      "author": {
+                        "type": "Person",
+                        "affiliations": [],
+                        "name": "CagyPegasus"
+                      },
+                      "roleName": "Writer",
+                      "format": "LaTeX",
+                      "lastModified": {
+                        "type": "Timestamp",
+                        "value": 1739914413194,
+                        "timeUnit": "Millisecond"
+                      }
+                    }
+                  ],
+                  "provenance": [
+                    {
+                      "type": "ProvenanceCount",
+                      "provenanceCategory": "Hw",
+                      "characterCount": 6,
+                      "characterPercent": 100
+                    }
+                  ],
+                  "compilationDigest": {
+                    "type": "CompilationDigest",
+                    "stateDigest": 952834763017921581
+                  },
+                  "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>θ</mi></math>"
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " represents the network parameters.",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        35
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 41,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "order": "Unordered",
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914413194,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 152,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Common activation functions include:",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                36
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914440070,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 36,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "List",
+      "items": [
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "Sigmoid:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            8
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " ",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        1
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "type": "MathInline",
+                  "code": {
+                    "string": "\\sigma(x) = \\frac{1}{1 + e^{-x}}",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        32
+                      ]
+                    ]
+                  },
+                  "mathLanguage": "tex",
+                  "authors": [
+                    {
+                      "type": "AuthorRole",
+                      "author": {
+                        "type": "Person",
+                        "affiliations": [],
+                        "name": "CagyPegasus"
+                      },
+                      "roleName": "Writer",
+                      "format": "LaTeX",
+                      "lastModified": {
+                        "type": "Timestamp",
+                        "value": 1739914413194,
+                        "timeUnit": "Millisecond"
+                      }
+                    }
+                  ],
+                  "provenance": [
+                    {
+                      "type": "ProvenanceCount",
+                      "provenanceCategory": "Hw",
+                      "characterCount": 32,
+                      "characterPercent": 100
+                    }
+                  ],
+                  "compilationDigest": {
+                    "type": "CompilationDigest",
+                    "stateDigest": 3625310341138944375
+                  },
+                  "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>σ</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mfrac><mn>1</mn><mrow><mn>1</mn><mo>+</mo><msup><mi>e</mi><mrow><mo>-</mo><mi>x</mi></mrow></msup></mrow></mfrac></math>"
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 41,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Strong",
+                  "content": [
+                    {
+                      "type": "Text",
+                      "value": {
+                        "string": "ReLU:",
+                        "authorship": [
+                          [
+                            1,
+                            0,
+                            0,
+                            5
+                          ]
+                        ]
+                      }
+                    }
+                  ]
+                },
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": " ",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        1
+                      ]
+                    ]
+                  }
+                },
+                {
+                  "type": "MathInline",
+                  "code": {
+                    "string": "\\sigma(x) = \\max(0, x)",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        22
+                      ]
+                    ]
+                  },
+                  "mathLanguage": "tex",
+                  "authors": [
+                    {
+                      "type": "AuthorRole",
+                      "author": {
+                        "type": "Person",
+                        "affiliations": [],
+                        "name": "CagyPegasus"
+                      },
+                      "roleName": "Writer",
+                      "format": "LaTeX",
+                      "lastModified": {
+                        "type": "Timestamp",
+                        "value": 1739914413194,
+                        "timeUnit": "Millisecond"
+                      }
+                    }
+                  ],
+                  "provenance": [
+                    {
+                      "type": "ProvenanceCount",
+                      "provenanceCategory": "Hw",
+                      "characterCount": 22,
+                      "characterPercent": 100
+                    }
+                  ],
+                  "compilationDigest": {
+                    "type": "CompilationDigest",
+                    "stateDigest": 4849238760586261259
+                  },
+                  "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>σ</mi><mo>(</mo><mi>x</mi><mo>)</mo><mo>=</mo><mi>max</mi><mo>(</mo><mn>0</mn><mo>,</mo><mi>x</mi><mo>)</mo></math>"
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 28,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "order": "Unordered",
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914413194,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 69,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Heading",
+      "level": 2,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Stochastic Gradient Descent",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                27
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914413194,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 27,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "To minimize the empirical risk ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                31
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "R_n(\\theta)",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                11
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914413194,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 11,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 13524455989362804154
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><msub><mi>R</mi><mi>n</mi></msub><mo>(</mo><mi>θ</mi><mo>)</mo></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": ", we use Stochastic Gradient Descent (SGD): ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                44
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "\\theta \\leftarrow \\theta - \\eta \\nabla_{\\theta} l(y_i, x_i, \\theta)",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                67
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914413194,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 67,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 10107381080936169122
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>θ</mi><mo>←</mo><mi>θ</mi><mo>-</mo><mi>η</mi><msub><mo>∇</mo><mi>θ</mi></msub><mi>l</mi><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>,</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><mi>θ</mi><mo>)</mo></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " where ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                7
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "\\eta",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                4
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914413194,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 4,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 865159543259500449
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>η</mi></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " is the learning rate and ",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                26
+              ]
+            ]
+          }
+        },
+        {
+          "type": "MathInline",
+          "code": {
+            "string": "l(y_i, x_i, \\theta)",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                19
+              ]
+            ]
+          },
+          "mathLanguage": "tex",
+          "authors": [
+            {
+              "type": "AuthorRole",
+              "author": {
+                "type": "Person",
+                "affiliations": [],
+                "name": "CagyPegasus"
+              },
+              "roleName": "Writer",
+              "format": "LaTeX",
+              "lastModified": {
+                "type": "Timestamp",
+                "value": 1739914413194,
+                "timeUnit": "Millisecond"
+              }
+            }
+          ],
+          "provenance": [
+            {
+              "type": "ProvenanceCount",
+              "provenanceCategory": "Hw",
+              "characterCount": 19,
+              "characterPercent": 100
+            }
+          ],
+          "compilationDigest": {
+            "type": "CompilationDigest",
+            "stateDigest": 3697721414056762054
+          },
+          "mathml": "<math xmlns=\"http://www.w3.org/1998/Math/MathML\" display=\"inline\"><mi>l</mi><mo>(</mo><msub><mi>y</mi><mi>i</mi></msub><mo>,</mo><msub><mi>x</mi><mi>i</mi></msub><mo>,</mo><mi>θ</mi><mo>)</mo></math>"
+        },
+        {
+          "type": "Text",
+          "value": {
+            "string": " is the loss function for a single data point. This iterative update gradually optimizes the model parameters.",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                110
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914413194,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 319,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Heading",
+      "level": 1,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Parts of a Neural Network",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                25
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914413194,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 25,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "List",
+      "items": [
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": "Layers",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        6
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 6,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": "Activation Functions",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        20
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914413194,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 20,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": "Loss Functions",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        14
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914444568,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 14,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ListItem",
+          "content": [
+            {
+              "type": "Paragraph",
+              "content": [
+                {
+                  "type": "Text",
+                  "value": {
+                    "string": "Neural Network",
+                    "authorship": [
+                      [
+                        1,
+                        0,
+                        0,
+                        14
+                      ]
+                    ]
+                  }
+                }
+              ],
+              "authors": [
+                {
+                  "type": "AuthorRole",
+                  "author": {
+                    "type": "Person",
+                    "affiliations": [],
+                    "name": "CagyPegasus"
+                  },
+                  "roleName": "Writer",
+                  "format": "LaTeX",
+                  "lastModified": {
+                    "type": "Timestamp",
+                    "value": 1739914456694,
+                    "timeUnit": "Millisecond"
+                  }
+                }
+              ],
+              "provenance": [
+                {
+                  "type": "ProvenanceCount",
+                  "provenanceCategory": "Hw",
+                  "characterCount": 14,
+                  "characterPercent": 100
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "order": "Ascending",
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914456694,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 54,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Heading",
+      "level": 2,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Layers",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                6
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914485640,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 6,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Layer: is a collection of neurons(nodes) that process data at a particular stage in the network. Consists of Input Layer, Hidden Layer, and Output Layer.",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                153
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914646210,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 153,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Heading",
+      "level": 3,
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "Abstract Layer",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                14
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914504593,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 14,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "Paragraph",
+      "content": [
+        {
+          "type": "Text",
+          "value": {
+            "string": "This class serves as an abstract base class for all layers in the network.",
+            "authorship": [
+              [
+                1,
+                0,
+                0,
+                74
+              ]
+            ]
+          }
+        }
+      ],
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914691672,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 74,
+          "characterPercent": 100
+        }
+      ]
+    },
+    {
+      "type": "StyledBlock",
+      "code": {
+        "string": "itemize*",
+        "authorship": [
+          [
+            1,
+            0,
+            0,
+            8
+          ]
+        ]
+      },
+      "authors": [
+        {
+          "type": "AuthorRole",
+          "author": {
+            "type": "Person",
+            "affiliations": [],
+            "name": "CagyPegasus"
+          },
+          "roleName": "Writer",
+          "format": "LaTeX",
+          "lastModified": {
+            "type": "Timestamp",
+            "value": 1739914705107,
+            "timeUnit": "Millisecond"
+          }
+        }
+      ],
+      "provenance": [
+        {
+          "type": "ProvenanceCount",
+          "provenanceCategory": "Hw",
+          "characterCount": 8,
+          "characterPercent": 100
+        }
+      ],
+      "content": [],
+      "compilationDigest": {
+        "type": "CompilationDigest",
+        "stateDigest": 17131612781284045689
+      },
+      "compilationMessages": [
+        {
+          "type": "CompilationMessage",
+          "level": "Warning",
+          "message": "Could not match class 'itemize*'",
+          "codeLocation": {
+            "type": "CodeLocation",
+            "startLine": 0,
+            "startColumn": 0
+          }
+        }
+      ],
+      "css": "\n",
+      "classList": "itemize*"
+    }
+  ]
+}
