@@ -1,0 +1,449 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath, amsfonts, amssymb, amsthm, amscd} % Combined math packages
+\usepackage{tikz}     % For drawing matrices
+\usepackage{listings, pythontex} % For code snippets
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{relsize}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%% CHANGE HERE %%%%%%%%%%%%%%%%%%%%
+\newcommand\course{STA4724}
+\newcommand\semester{Spring 2025}
+\newcommand\hwnumber{1}                 % <-- ASSIGNMENT #
+\newcommand\NetIDa{Albert Jojo}          % <-- YOUR NAME
+\newcommand\NetIDb{5390131}              % <-- STUDENT ID #
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% DO NOT CHANGE HERE %%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\NetIDa \\ \NetIDb} % Combined name and ID in the left header
+\chead{\textbf{\Large Homework \hwnumber}}
+\rhead{\course \\ \semester}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\subsection*{1a. Variable Types}
+
+\textbf{int}: the variable type that holds signed integer values. (print(8) Output: 
+\begin{pycode}
+print(8)
+\end{pycode}
+)
+
+\textbf{string}: a sequence of 0 or more characters that is enclosed with either " or '.(print("Hi") Output: 
+\begin{pycode}
+print("Hi")
+\end{pycode}
+)
+
+\textbf{float}: the variable type that is denoted by any rational numbers (print(3.1415) Output: 
+\begin{pycode}
+print(3.1415)
+\end{pycode}
+)
+
+\subsection*{1b. Strings vs. Lists}
+Strings, compared to lists, are immutable, meaning in Python a string can't be directly modified after initialization. All the string operations create a copy of the original string to modify it for different functions. On the other hand, a list is mutable, meaning that it can be directly modified after initialization. This allows you to extend or append a value to a list.
+
+\subsection*{1c. Example of List Modification}
+\begin{pycode}
+fruits = ['apple', 'banana', 'cherry', 'persimmon', 'jackfruit']
+fruits.append('orange')
+print(f"Output: {fruits}")
+\end{pycode}
+
+\subsection*{1d. Image Processing Example}
+
+\begin{pycode}
+from PIL import Image
+import numpy as np
+
+# Load the Image
+img = Image.open('image-hw1.png')
+
+# Convert the image to img_matrix
+img_matrix = np.array(img)
+
+# Select the slice of the image to change the color to red
+img_matrix[:20, :, :] = [255, 0, 0, 255]
+
+# Reconvert the image_matrix to img
+img = Image.fromarray(img_matrix)
+
+# Save the modified image
+output_filename = "modified_image.png"
+img.save(output_filename)
+
+# Optionally display the image (this will not show in the LaTeX PDF)
+img.show()
+\end{pycode}
+
+\begin{center}
+   \includegraphics[width=\textwidth]{modified_image.png}
+\end{center}
+
+    \newpage
+
+    2a. Prove \( IA = A \), where \( A \) is an \( n \times l \) matrix and \( I \) is an \( n \times n \) identity matrix:
+    \[
+        A = \begin{bmatrix}
+            a_{11} & \cdots & a_{1l} \\
+            a_{n1} & \cdots & a_{nl}
+        \end{bmatrix}
+    \]
+    \paragraph{Proof of \( IA = A \):}
+    Let \( A \) be an \( n \times l \) matrix and \( I \) the \( n \times n \) identity matrix. 
+    The element in the \( i \)-th row and \( j \)-th column of \( IA \) is:
+    \[
+    (IA)_{ij} = \sum_{k=1}^{n} I_{ik} A_{kj}.
+    \]
+    Since \( I_{ik} = 1 \) if \( i = k \) and \( 0 \) otherwise, this simplifies to:
+    \[
+    (IA)_{ij} = I_{ii} A_{ij} = A_{ij}.
+    \]
+    Thus, \( IA = A \). \qedhere
+
+    
+    
+    \vspace{1.2cm}
+
+    2b. Let \( A \) be an \( n \times n \) square matrix. Prove that \( A \) and \( A^T \) have exactly the same eigenvalues.
+    \paragraph{Proof \( A \) and \( A^T \) have the same eigenvalues:}
+    The eigenvalues of \( A \) are solutions to \( \det(A - \lambda I) = 0 \). For \( A^T \):
+    \[
+    \det(A^T - \lambda I) = \det((A - \lambda I)^T) = \det(A - \lambda I).
+    \]
+    Since \( \det(A^T - \lambda I) = \det(A - \lambda I) \), \( A \) and \( A^T \) share the same characteristic equation, hence the same eigenvalues. \qedhere
+
+    \vspace{1cm}
+    2c. Let A be an n × n square matrix. Prove $A^{-1}$ exists if and only if 0 is not an eigenvalue of A
+
+    \paragraph{Proof}  
+    \textbf{1st:} Assume \( A^{-1} \) exists. Then \( \det(A) \neq 0 \).  
+    If \( \lambda = 0 \) were an eigenvalue, then \( \det(A - 0 \cdot I) = \det(A) = 0 \), contradicting \( \det(A) \neq 0 \).  
+    Thus, \( 0 \) is not an eigenvalue.  
+    
+    \textbf{2nd:} Assume \( 0 \) is not an eigenvalue. Then \( \det(A) = \det(A - 0 \cdot I) \neq 0 \).  
+    By the invertible matrix theorem, \( A \) is invertible.  
+    
+    \vspace{0.2cm}  
+    \noindent
+    \boxed{\text{\( A^{-1} \) exists if and only if \( 0 \) is not an eigenvalue of \( A \).}}
+
+    \newpage
+
+    2d. Let \( A \) be an \( n \times n \) square matrix such that \( A^{-1} \) exists. Prove that if \( \lambda \) is an eigenvalue of \( A \), then \( \frac{1}{\lambda} \) is an eigenvalue of \( A^{-1} \).
+
+    \paragraph{Proof}
+    Let \( \mathbf{x} \neq \mathbf{0} \) be an eigenvector of \( A \) with eigenvalue \( \lambda \). Then:
+    \[
+    A\mathbf{x} = \lambda\mathbf{x}.
+    \]
+    Since \( A \) is invertible, \( \lambda \neq 0 \). Multiply both sides by \( A^{-1} \):
+    \[
+    A^{-1}(A\mathbf{x}) = A^{-1}(\lambda\mathbf{x}) \implies \mathbf{x} = \lambda A^{-1}\mathbf{x}.
+    \]
+    Dividing by \( \lambda \):
+    \[
+    A^{-1}\mathbf{x} = \frac{1}{\lambda}\mathbf{x}.
+    \]
+    Thus, \( \frac{1}{\lambda} \) is an eigenvalue of \( A^{-1} \). \qed
+
+    \vspace{1.2cm}
+
+    2e. Prove that if \(A^2 = I\), eigenvalues of A must be 1 or -1
+
+    \paragraph{Proof}
+    Consider \(\lambda, x\)
+
+    \begin{align*}
+        Ax &= \lambda x \\
+        A^2x &= \lambda Ax  \\
+        Ix &= \lambda Ax  \\
+        x &= \lambda Ax  \\
+        x &= \lambda (\lambda x)  \\
+        x &= \lambda^2 x \\
+        \implies \lambda^2 &= 1 \\
+        \therefore \lambda &= \pm 1
+    \end{align*}
+
+    \newpage
+
+    2f. Find whether the matrix A = \(
+        \begin{bmatrix}
+            1 & 2 \\
+            0 & -1 
+        \end{bmatrix}
+    \) has any defective eigenvalues. 
+
+ 
+\paragraph{Solution:}
+
+\subparagraph{Find eigenvalues (algebraic multiplicity, \( t \))}
+\[
+\det(A - \lambda I) = \begin{vmatrix}
+1 - \lambda & 2 \\
+0 & -1 - \lambda
+\end{vmatrix} = (1 - \lambda)(-1 - \lambda) - (0 \cdot 2).
+\]
+\[
+(1 - \lambda)(-1 - \lambda) = -(1 - \lambda)(1 + \lambda) = -1 + \lambda^2.
+\]
+\[
+\lambda^2 - 1 = 0 \implies \lambda^2 = 1 \implies \lambda = \pm 1.
+\]
+Algebraic multiplicities:
+\[
+\lambda_1 = 1 \quad (t_1 = 1), \quad \lambda_2 = -1 \quad (t_2 = 1).
+\]
+
+\subparagraph{Find geometric multiplicities (\( g \))}
+
+\textbf{For \( \lambda_1 = 1 \):}
+\[
+A - I = \begin{bmatrix}
+0 & 2 \\
+0 & -2
+\end{bmatrix}.
+\]
+Solve \( (A - I)\mathbf{x} = \mathbf{0} \):
+\[
+0x + 2y = 0 \implies y = 0.
+\]
+Eigenvectors: \( \mathbf{x} = x \begin{bmatrix} 1 \\ 0 \end{bmatrix} \). \\
+Geometric multiplicity: \( g_1 = 1 \).
+
+\textbf{For \( \lambda_2 = -1 \):}
+\[
+A + I = \begin{bmatrix}
+2 & 2 \\
+0 & 0
+\end{bmatrix}.
+\]
+Solve \( (A + I)\mathbf{x} = \mathbf{0} \):
+\[
+2x + 2y = 0 \implies x = -y.
+\]
+Eigenvectors: \( \mathbf{x} = y \begin{bmatrix} -1 \\ 1 \end{bmatrix} \). \\
+Geometric multiplicity: \( g_2 = 1 \).
+
+\subparagraph{Check for defective eigenvalues} 
+
+A defective eigenvalue occurs if \( g < t \). In this case
+\[
+\begin{cases}
+g_1 = t_1 = 1 \implies \lambda_1 \text{ is \textbf{not defective}}, \\
+g_2 = t_2 = 1 \implies \lambda_2 \text{ is \textbf{not defective}}.
+\end{cases}
+\]
+
+\subparagraph{Conclusion:}
+Since \( g = t \) for all eigenvalues, the matrix \( A \) has \textbf{no defective eigenvalues}.
+
+
+\vspace{1.2cm}
+\paragraph{Problem 2g:} Determine if the matrix \( A = \begin{bmatrix} 1 & 0 & 2 \\ -1 & 1 & 3 \\ 0 & 0 & 2 \end{bmatrix} \) has defective eigenvalues.
+
+\paragraph{Solution:}
+
+\subparagraph{Find Eigenvalues (Algebraic Multiplicity, \( t \))}
+The characteristic polynomial is calculated as:
+\[
+\det(A - \lambda I) = \begin{vmatrix}
+1 - \lambda & 0 & 2 \\
+-1 & 1 - \lambda & 3 \\
+0 & 0 & 2 - \lambda
+\end{vmatrix} = (1 - \lambda) \begin{vmatrix}
+1 - \lambda & 3 \\
+0 & 2 - \lambda
+\end{vmatrix} + 2 \begin{vmatrix}
+-1 & 1 - \lambda \\
+0 & 0
+\end{vmatrix}.
+\]
+\[
+= (1 - \lambda)\big[(1 - \lambda)(2 - \lambda)\big] + 2 \cdot 0 = (1 - \lambda)(\lambda^2 - 3\lambda + 2).
+\]
+\[
+= -(\lambda - 1)^2(\lambda - 2).
+\]
+Eigenvalues and algebraic multiplicities:
+\[
+\lambda_1 = 1 \quad (t_1 = 2), \quad \lambda_2 = 2 \quad (t_2 = 1).
+\]
+
+\subparagraph{Compute Geometric Multiplicities (\( g \))}
+\textbf{For \( \lambda_1 = 1 \):}  
+\[
+A - I = \begin{bmatrix}
+0 & 0 & 2 \\
+-1 & 0 & 3 \\
+0 & 0 & 1
+\end{bmatrix} = \begin{bmatrix}
+1 & 0 & -3 \\
+0 & 0 & 1 \\
+0 & 0 & 0
+\end{bmatrix}.
+\]
+\textbf{For \( \lambda_2 = 2 \):}  
+\[
+A - 2I = \begin{bmatrix}
+-1 & 0 & 2 \\
+-1 & -1 & 3 \\
+0 & 0 & 0
+\end{bmatrix} = \begin{bmatrix}
+1 & 0 & -2 \\
+0 & 1 & -1 \\
+0 & 0 & 0
+\end{bmatrix}.
+\]
+
+\subparagraph{Check for Defective Eigenvalues}  
+An eigenvalue is defective if \( g < t \):
+\[
+\begin{cases}
+\lambda_1 = 1: & g_1 = 1 < t_1 = 2 \implies \textbf{Defective}, \\
+\lambda_2 = 2: & g_2 = 1 = t_2 = 1 \implies \textbf{Not Defective}.
+\end{cases}
+\]
+
+\subparagraph{Conclusion:}  
+The matrix \( A \) has \textbf{one defective eigenvalue} (\( \lambda = 1 \)) because its geometric multiplicity (\( g = 1 \)) is less than its algebraic multiplicity (\( t = 2 \)). The eigenvalue \( \lambda = 2 \) is not defective.
+
+\pagebreak
+
+2h. Let $A_{ij}$ be a square upper triangular matrix. Prove that A is only invertible if the
+diagonal in the matrix is not zero.
+
+\paragraph{Proof}
+Let \( A \) be an \( i \times j \) upper triangular matrix. A matrix is invertible if and only if its determinant is nonzero. 
+
+For an upper triangular matrix, the determinant is the product of its diagonal entries:
+\[
+\det(A) = a_{11} \cdot a_{22} \cdot \cdots \cdot a_{ij}
+\]
+
+\begin{itemize}
+    \item \textbf{1st:} 
+    If \( A \) is invertible, then \( \det(A) \neq 0 \). This implies:
+    \[
+    a_{11} \cdot a_{22} \cdot \cdots \cdot a_{nn} \neq 0 \quad \implies \quad a_{ij} \neq 0 \text{ for all } i = 1, 2, \dots, n.
+    \]
+    Thus, all diagonal entries must be nonzero.
+    
+    \item \textbf{2nd:} 
+    If all diagonal entries \( a_{ii} \) are nonzero, then:
+    \[
+    \det(A) = a_{11} \cdot a_{22} \cdot \cdots \cdot a_{ij} \neq 0.
+    \]
+    Since the determinant is nonzero, \( A \) is invertible.
+\end{itemize}
+
+\paragraph{Conclusion}
+A square upper triangular matrix \( A \) is invertible \textbf{if and only if} all its diagonal entries are nonzero. 
+\[
+\boxed{\text{\( A \) is invertible } \iff a_{ij} \neq 0 \text{ for all } i = 1, 2, \dots, n.}
+\]
+
+\vspace{1.2cm}
+
+2i. Prove if A is a square upper triangular matrix, then the eigenvalues of A are diagonal values
+
+\paragraph*{Solution:}
+\begin{enumerate}
+    \item An matrix $A \epsilon M_n$ ,
+    det(A) = $\lambda_1 * \lambda_2 * ... \lambda_n$
+    \item Matrix A is only invertible if and only if its determinant is non-zero.
+    \item An eigen values of an nxn upper triangular matrix are its \textbf{diagonal values}
+\end{enumerate}
+
+\pagebreak
+
+2j. Define the block matrix B = \(
+\begin{bmatrix}
+    A & I \\
+    C & 0 
+\end{bmatrix}
+\), where I is an identity matrix and O is a zero matrix. Calculate the $BB^T$.
+
+\paragraph{Solution:}
+\[
+B^T = \begin{bmatrix}
+    A^T & C^T \\
+    I & 0 
+\end{bmatrix}.
+\]
+\[
+BB^T = \begin{bmatrix}
+    A & I \\
+    C & 0 
+\end{bmatrix}
+\begin{bmatrix}
+    A^T & C^T \\
+    I & 0 
+\end{bmatrix}
+= \begin{bmatrix}
+    AA^T + I & AC^T \\
+    CA^T & CC^T 
+\end{bmatrix}.
+\]
+
+\boxed{BB^T = \begin{bmatrix}
+    AA^T + I & AC^T \\
+    CA^T & CC^T 
+\end{bmatrix}}
+
+\vspace{1.2cm}
+
+\textbf{Prove:} Let \( I \) be the \( n \times n \) identity matrix and \( u \) and \( v \) be two \( n \times 1 \) column vectors. The matrix \( I + uv^T \) is invertible if and only if \( 1 + v^T u \neq 0 \). When it is invertible, its inverse is
+\[
+(I + uv^T)^{-1} = I - \frac{1}{1 + v^T u} uv^T.
+\]
+
+\textbf{What is the Woodbury matrix identity (no proof needed)?}
+
+\paragraph*{Soln:}
+The matrix \(I + uv^T\) is invertible if and only if \(1 + v^Tu \neq 0\). When invertible, the inverse can be represented: 
+\[
+(I + uv^T)^{-1} = I - \frac{1}{1+v^Tu}uv^T
+\]
+
+
+Assume \( I + uv^T \) is invertible. Then:
+\[
+    (I + uv^T)u = u + u(v^T u) = u(1 + v^T u) = 0
+\]
+This implies \( u = 0 \) or \( 1 + v^T u = 0 \). If \( u \neq 0 \), then \( 1 + v^T u = 0 \), contradicting the invertibility of \( I + uv^T \). Hence, \( I + uv^T \) is invertible if and only if \( 1 + v^T u \neq 0 \).
+
+\vspace{.5cm}
+
+\textbf{Woodbury Matrix identity}
+
+\[
+\boxed{
+    (A+UCV)^{-1} = A^{-1} - A^{-1}U(C^{-1} + VA^{-1}U)^{-1}VA^{-1}
+}
+\]
+\end{document}

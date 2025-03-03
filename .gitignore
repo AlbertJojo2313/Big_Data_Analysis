@@ -1,1 +1,44 @@
-hw/
+# LaTeX auxiliary and temporary files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.idx
+*.ilg
+*.ind
+*.lof
+*.lot
+*.nav
+*.out
+*.snm
+*.toc
+*.log
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.synctex
+*.run.xml
+*.bcf
+
+# Editor backup and swap files
+*~
+*.swp
+*.swo
+*.bak
+
+# PDF and compiled files
+*.dvi
+*.ps
+*.pdf
+
+# Generated directories
+_tex/
+
+
+# Python Binaries
+*.pytxcode
+
+# Images
+*.png
+
+pythontex-files-HW_1/

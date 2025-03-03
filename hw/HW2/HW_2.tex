@@ -1,0 +1,355 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage{amsmath, amsfonts, amssymb, amsthm, amscd} % Combined math packages
+\usepackage{tikz}     % For drawing matrices
+\usepackage{listings, pythontex} % For code snippets
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{relsize}
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.2in} % Increased spacing for readability
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%% CHANGE HERE %%%%%%%%%%%%%%%%%%%%
+\newcommand\course{STA4724}
+\newcommand\semester{Spring 2025}
+\newcommand\hwnumber{2}                 % <-- ASSIGNMENT #
+\newcommand\NetIDa{Albert Jojo}          % <-- YOUR NAME
+\newcommand\NetIDb{5390131}              % <-- STUDENT ID #
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% DO NOT CHANGE HERE %%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\NetIDa \\ \NetIDb} % Combined name and ID in the left header
+\chead{\textbf{\Large Homework \hwnumber}}
+\rhead{\course \\ \semester}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\section*{Question 2}
+\begin{itemize}
+    \item[(a)] The problem of learning an input-output mapping is called \underline{\hspace{3cm}} problem.
+    \vspace{0.5cm}
+    \\
+    \textbf{Answer:} a supervised learning problem.
+    
+    \item[(b)] A supervised learning problem is called \underline{\hspace{3cm}} if the output variable \(y_t\) is discrete/categorical.
+    \vspace{0.5cm}
+    \\
+    \textbf{Answer:} a classification problem.
+    
+    \item[(c)] A supervised learning problem is called \underline{\hspace{3cm}} if the output variable \(y_t\) is continuous.
+    \vspace{0.5cm}
+    \\
+    \textbf{Answer:} a regression problem.
+    
+    \item[(d)] Denote the realized outputs \(y_i\), predicted outputs \(\hat{y}_i\) and features of \(x_i\).
+    The best predictive model \textit{h} is the one having the smallest expected loss \(L(h) = E[l(h_{\theta}(x),y)]\) with
+    respect to the joint distribution of \(x_i\) and \(y_i\). Since the true joint distribution of \(x_i\) and \(y_i\) is usually
+    unknown, the empirical risk is calculated as the sample average of the losses over a set of observed data.
+    \vspace{1.0cm}
+    \\
+    \textbf{Answer:} True.
+    
+    \item[(e)] Write down the formulas of the following loss functions: Mean Squared Error (MSE), Mean Absolute Error (MAE), and Cross Entropy.
+    \vspace{1.0cm}
+    \\
+    \textbf{Answer:}
+    
+    \textit{Mean Squared Error (MSE)}
+    \[
+        \textbf{MSE} = \frac{1}{n}\sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+    \]
+    
+    \textit{Mean Absolute Error (MAE)}
+    \[
+        \textbf{MAE} = \frac{1}{n}\sum_{i=1}^{n} \left\lvert x_i - y_i \right\rvert 
+    \]
+    
+    \textit{Cross Entropy}
+    \[
+        \textbf{H(P,Q)} = -\sum_{x \in X} P(x) \log Q(x)
+    \]
+    
+    \item[(f)] Show that the excess risk is bounded for the asymptotic analysis of empirical risk minimization:
+    \[
+        L(\hat{\theta}) - L(\theta^*) \leq \frac{c}{n} + O(\frac{1}{n})
+    \]
+    
+    \textbf{Answer:}
+    \begin{itemize}
+        \item The left-hand side, \(L(\hat{\theta}) - L(\theta^*)\), represents the excess risk, which is the difference between the loss of the model trained on the data and the loss of the best possible model (\(\theta^*\)).
+        \item The right-hand side, \(\frac{c}{n} + O(\frac{1}{n})\), shows that excess risk decreases as the number of data points \(n\) increases.
+        \item This means that with more data, our training process becomes more reliable because the empirical distribution of data (observed data) gets closer to the true data distribution (reality).
+        \item Thus, to conclude, no matter how small our dataset is, ERM is guaranteed to find a reasonable solution, but it can be improved with more data that we collect.
+    \end{itemize}
+    
+    \item[(g)] Describe the curse of dimensionality and your understanding of overfitting.
+    \vspace{1.0cm}
+    \\
+    \textbf{Answer:} 
+    
+    The \textit{curse of dimensionality} refers to the challenges that arise when working with high-dimensional data. As the number of features increases, it causes various challenges:
+    \begin{itemize}
+        \item \textbf{Data sparsity:} In higher dimensions, meaningful correlations become harder to identify.
+        \item \textbf{Higher computational complexity:} More features lead to increased processing requirements.
+        \item \textbf{Need for more data:} Higher dimensions require exponentially more data to maintain accuracy, which becomes impractical.
+    \end{itemize}
+    
+    Overfitting, on the other hand, occurs when the model learns patterns that are too specific to the training dataset. This causes:
+    \begin{itemize}
+        \item \textbf{Poor test performance:} The model is overly specialized in training data and fails to generalize.
+        \item \textbf{Complexity vs. simplicity:} The model may learn complex noise instead of simple, meaningful patterns.
+        \item \textbf{Symptoms:} Large gaps between training and testing accuracy.
+    \end{itemize}
+    
+    To mitigate overfitting, techniques like PCA or regularization should be used.
+    \item[(h)] Gradient boosting can be used to build sequences of increasingly complex additive models. Form
+    generalized additive models and describe the algorithm of training base learners based on the pseudo-
+    residuals.
+    \vspace{1.0cm}
+    \\ \textbf{Answer:} Gradient Boosting can be represented by the generalized additive model:
+
+    \[
+    g(E[y(x_1, x_2, ..., x_p)]) = \beta_0 + f_1(x_1) + f_2(x_2) + \cdots + f_p(x_p)
+    \]
+    
+    The boosting algorithm initializes with \( f_0(X_T) = 0 \) and updates iteratively as follows:
+    
+    \begin{enumerate}
+        \item Compute the pseudo-residuals:
+        \[
+        r_{j-1} = -\frac{\partial L(Y, f_{j-1}(X_T) + h)}{\partial h} \Big|_{h=0}
+        \]
+        where \( L(Y, f) \) is the loss function.
+        
+        \item Fit a base learner \( h_j^* \) (e.g., decision tree) to approximate the pseudo-residuals:
+        \[
+        h_j^*(X_T) \approx r_{j-1}
+        \]
+    
+        \item Update the model:
+        \[
+        f_j(X_T) = f_{j-1}(X_T) + \lambda h_j^*(X_T)
+        \]
+        where \( \lambda \) is a learning rate parameter.
+    
+        \item Evaluate the empirical risk of \( f_j(X_T) \) on a validation set.
+    
+        \item Repeat steps 1–4 until the empirical risk stops decreasing or until the maximum number of iterations \( J \) is reached.
+    \end{enumerate}
+    
+\end{itemize}
+\pagebreak
+\section*{Question 3}
+The code for the 2-layer neural network is given below:
+\begin{lstlisting}[language=Python, frame=single, breaklines=true]
+    For my 2-layer neural model I used dask to generate big data for my model simulation, instead of using numpy to generate values.
+
+    # Importing the required libraries
+    import dask.dataframe as dd
+    import dask.array as da
+    from dask.distributed import Client
+    from dask_ml.metrics import accuracy_score
+    from dask_ml.model_selection import train_test_split
+ 
+    
+    # Layer class
+    class Layer:
+        def __init__(self):
+            self.input = None
+            self.output = None
+    
+        def __call__(self, x):
+            return self.forward(x)
+    
+        def forward(self, input):
+            raise NotImplementedError
+    
+        def backward(self, up_gradient):
+            raise NotImplementedError
+    
+        def step(self, learning_rate):
+            pass
+    
+    # Loss function class
+    class Loss:
+        def __init__(self):
+            self.prediction = None
+            self.target = None
+            self.loss = None
+    
+        def __call__(self, prediction, target):
+            return self.forward(prediction, target)
+    
+        def forward(self, prediction, target):
+            raise NotImplementedError
+    
+        def backward(self):
+            raise NotImplementedError
+    
+    # Multi-Layer Perceptron (MLP) class
+    class MLP:
+        def __init__(self, layers, loss, learning_rate):
+            self.layers = layers
+            self.loss_fn = loss
+            self.learning_rate = learning_rate
+    
+        def __call__(self, input):
+            return self.forward(input)
+    
+        def forward(self, input):
+            for layer in self.layers:
+                input = layer(input)
+            return input
+    
+        def backward(self):
+            up_gradient = self.loss_fn.backward()
+            for layer in reversed(self.layers):
+                up_gradient = layer.backward(up_gradient)
+    
+        def loss(self, prediction, target):
+            return self.loss_fn(prediction, target)
+    
+        def update(self):
+            for layer in self.layers:
+                layer.step(self.learning_rate)
+    
+        def train(self, x_train, y_train, epochs, batch_size):
+            losses = []
+            for epoch in epochs:
+                running_loss = 0
+                for i in range(0, x_train.shape[0], batch_size):
+                    x_batch = x_train[i : i + batch_size]
+                    y_batch = y_train[i : i + batch_size]
+    
+                    prediction = self.forward(x_batch)
+    
+                    # Compute Loss and ensure computation
+                    loss = self.loss_fn(prediction, y_batch).mean().compute()
+                    running_loss += loss
+    
+                    self.backward()
+                    self.update()
+    
+                running_loss /= (x_train.shape[0] / batch_size)
+                losses.append(running_loss)
+            return losses
+    
+    # Linear layer
+    class Linear(Layer):
+        def __init__(self, input_size, output_size):
+            super().__init__()
+            self.w = 0.1 * da.random.normal(size=(input_size, output_size))
+            self.b = da.zeros((1, output_size))
+            self.dw = da.zeros_like(self.w)
+            self.db = da.zeros_like(self.b)
+    
+        def forward(self, input):
+            self.input = input
+            return da.dot(self.input, self.w) + self.b
+    
+        def backward(self, up_gradient):
+            self.dw = da.dot(self.input.T, up_gradient)
+            self.db = da.sum(up_gradient, axis=0, keepdims=True)
+            return da.dot(up_gradient, self.w.T)
+    
+        def step(self, learning_rate):
+            self.w -= learning_rate * self.dw
+            self.b -= learning_rate * self.db
+    
+    # ReLU activation function
+    class ReLU(Layer):
+        def forward(self, input):
+            self.input = input
+            return da.maximum(0, input)
+    
+        def backward(self, up_gradient):
+            return up_gradient * (self.input > 0)
+    
+    # CrossEntropy loss
+    class CrossEntropy(Loss):
+        def forward(self, prediction, target):
+            exp_pred = da.exp(prediction - da.max(prediction, axis=1, keepdims=True))
+            self.softmax = exp_pred / da.sum(exp_pred, axis=1, keepdims=True)
+            self.target = target
+            return -da.mean(da.sum(target * da.log(self.softmax + 1e-15), axis=1))
+    
+        def backward(self):
+            return (self.softmax - self.target) / self.target.shape[0]
+    
+    # Mean Squared Error loss
+    class MSE(Loss):
+        def forward(self, prediction, target):
+            self.prediction = prediction
+            self.target = target
+            return da.mean((prediction - target) ** 2)
+    
+        def backward(self):
+            return 2 * (self.prediction - self.target) / len(self.target)
+    
+    # Simulate data using Dask 
+    def simulate_data():
+        client = Client()  
+    
+        n_samples = 50000
+        n_features = 100
+    
+        # Generate data 
+        X = da.random.random((n_samples, n_features), chunks=(100_000, n_features))
+        y = da.random.randint(0, 2, size=(n_samples,), chunks=(100_000,))
+    
+        # Convert to Dask DataFrame
+        X_dd = dd.from_dask_array(X, columns=[f'feature{i}' for i in range(n_features)])
+        y_dd = dd.from_dask_array(y, columns=['target'])
+    
+        # Split into training & test sets (85% train, 15% test)
+        X_train, X_test, y_train, y_test = train_test_split(X_dd, y_dd, test_size=0.15, random_state=42)
+    
+        # Return dask arrays
+        return X_train.to_dask_array(lengths=True), X_test.to_dask_array(lengths=True), \
+               y_train.to_dask_array(lengths=True), y_test.to_dask_array(lengths=True)
+    
+    # Create network layers (2-layer neural network)
+    layers = [
+        Linear(100, 50),
+        ReLU(),
+        Linear(50, 2)
+    ]
+    
+    # Load data
+    x_train, x_test, y_train, y_test = simulate_data()
+    
+    # Create the model
+    model = MLP(layers, CrossEntropy(), learning_rate=0.01)
+    
+    # Train the model
+    losses = model.train(x_train=x_train, y_train=y_train, epochs=30, batch_size=1000)
+    
+    # Compute accuracy
+    y_pred = model(x_test).compute()
+    accuracy = accuracy_score(y_test.compute(), np.argmax(y_pred, axis=1))
+    
+    print(f"Accuracy:{accuracy}")
+    
+    
+\end{lstlisting}
+\end{document}
