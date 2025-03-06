@@ -348,8 +348,9 @@ The code for the 2-layer neural network is given below:
     y_pred = model(x_test).compute()
     accuracy = accuracy_score(y_test.compute(), np.argmax(y_pred, axis=1))
     
-    print(f"Accuracy:{accuracy}")
+    print(f"Accuracy:{accuracy:.2f}")
     
     
 \end{lstlisting}
+Accuracy Score: 0.75
 \end{document}

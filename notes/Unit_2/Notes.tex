@@ -1,0 +1,125 @@
+\documentclass{article}
+\usepackage[a4paper, left=1.0in, right=1.0in, top=1.0in, bottom=1.0in]{geometry}
+\usepackage{array}
+\usepackage{bm}
+\usepackage{amsmath}  % For advanced math typesetting
+\usepackage{amsfonts} % For math fonts like \mathbb
+\usepackage{amssymb}  % For symbols like \mathbb
+\usepackage{tikz}     % For drawing matrices
+\usetikzlibrary{trees}
+
+\title{Clustering}
+\author{Albert Jojo}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+Clustering can be applied to vectorial data where teh data is concentrated in distinct regions or clusters.
+
+\subsection*{Goal:} discover and represent such clusters
+\begin{itemize}
+    \item Hard partitional clustering $\rightarrow$ hard boundary. K-means algorithm
+    \item Soft partitioned clustering $\rightarrow$ probabilistic
+    \begin{itemize}
+        \item Gaussian mixture model
+        \item Partition coefficient index
+    \end{itemize}
+    \item Hierarchical clustering
+\end{itemize}
+\section*{K-means Algorithm}
+K-means clustering is an unsupervised machine learning technique used to group data points into clusters based on their similarity.
+\begin{enumerate}
+    \item Randomly select \( K \) points from the dataset as the initial cluster centroids.
+    \item For each data point in the dataset, calculate its distance from each of the \( K \) centroids.
+    \item Assign each data point to the cluster of the nearest centroid.
+    \item Recalculate the centroids of the clusters by taking the mean of all data points assigned to each cluster.
+    \item Repeat steps 2–4 until convergence. Convergence occurs when the centroids no longer change significantly or when a specified number of iterations is reached.
+    \item Once convergence is achieved, output the final cluster centroids and the assignment of each data point to a cluster.
+\end{enumerate}
+The algorithm can defined mathematicaly by:
+\[
+min E = \sum_{k=1}^{k} \sum_{n \epsilon C_k} \left\lVert X_n - \mu_k\right\rVert ^2
+\]
+where \begin{itemize}
+    \item[k]: number of clusters
+    \item[\(X_n\)]: data point n
+    \item[\(\mu_k\)]: center point of k cluster
+    \item[\(C_k\)]: data set of k cluster   
+\end{itemize}
+If the assignment is fixed:
+\[
+\mu_k = \frac{1}{N_k}\sum_{n \epsilon C_k}X_n
+\]
+
+
+\section*{Gaussian Mixture Model (GMM)}
+
+A Gaussian Mixture Model (GMM) is a probabilistic model that assumes data is generated from a mixture of multiple Gaussian distributions. It is widely used in clustering and density estimation problems. Below, we describe the mathematical formulation of both univariate and multivariate Gaussian distributions, followed by their mixture representation and parameter estimation using Maximum Likelihood Estimation (MLE).
+
+\subsection*{1. Univariate Gaussian Distribution}
+A univariate Gaussian (normal) distribution is given by:
+\[
+F(x) = N(\mu,\sigma^2) = \frac{1}{\sqrt{2\pi}\sigma} e^{-\frac{(x - \mu)^2}{2\sigma^2}}
+\]
+where:
+\begin{itemize}
+    \item \(x\) represents a data point from a single continuous random variable.
+    \item \(\mu\) is the mean (expected value) of \(x\), determining the center of the distribution.
+    \item \(\sigma\) is the standard deviation of \(x\), describing the spread of the distribution.
+\end{itemize}
+
+\subsection*{2. Multivariate Gaussian Distribution}
+When dealing with \(n\)-dimensional data, the Gaussian distribution extends to multiple dimensions as follows:
+\[
+\Phi(x) = N(\mu, \Sigma) = \frac{1}{(2\pi)^{\frac{n}{2}} \det(\Sigma)^{\frac{1}{2}}} \exp \left( -\frac{1}{2} (x - \mu)^T \Sigma^{-1} (x - \mu) \right)
+\]
+where:
+\begin{itemize}
+    \item \(x\) is an \(n\)-dimensional data point.
+    \item \(\mu\) is the mean vector of size \(n\), specifying the center of the distribution.
+    \item \(\Sigma\) is the covariance matrix (\(n \times n\)), representing the spread and correlation between variables.
+    \item \(\det(\Sigma)\) is the determinant of the covariance matrix, ensuring proper normalization.
+    \item \(\Sigma^{-1}\) is the inverse of the covariance matrix, used in the exponent to measure the Mahalanobis distance.
+\end{itemize}
+
+\subsection*{3. Gaussian Mixture Model (GMM)}
+A Gaussian mixture model represents data as a weighted sum of multiple Gaussian distributions. For a mixture of two Gaussians, the probability density function is:
+\[
+F(X) = w_1F_1(X) + (1-w_1)F_2(X)
+\]
+where:
+\begin{itemize}
+    \item \(w_1\) and \(1 - w_1\) are the mixture weights (proportions) for each Gaussian component, satisfying \(0 \leq w_1 \leq 1\) and \(w_1 + w_2 = 1\).
+    \item \(F_1(X)\) and \(F_2(X)\) are Gaussian probability density functions with their respective means and variances.
+\end{itemize}
+
+The expectation of a random variable \(x\) raised to the power \(r\) in a mixture model is given by:
+\[
+E[x^r] = w_1M_r(\mu_1,\sigma_1^2) + (1 - w_1)M_r(\mu_2,\sigma_2^2)
+\]
+where \(M_r(\mu, \sigma^2)\) represents the \(r\)th moment of a Gaussian distribution.
+
+\subsection*{4. Maximum Likelihood Estimation (MLE)}
+Given a dataset \( \{x_n\} \) of \(N\) independent observations, the likelihood function for the Gaussian mixture model is given by:
+\[
+p(\{x_n\}) = \prod_{n=1}^{N} p(x_n)
+\]
+where the probability of each data point is computed as:
+\[
+p(x_n) = \sum_{k=1}^{K} p(x_n|k) P(k)
+\]
+Here:
+\begin{itemize}
+    \item \(K\) is the number of Gaussian components in the mixture.
+    \item \(P(k)\) represents the prior probability (weight) of Gaussian component \(k\).
+    \item \(p(x_n|k)\) is the probability density function of the \(k\)th Gaussian component evaluated at \(x_n\).
+\end{itemize}
+MLE is used to estimate the parameters \((w_k, \mu_k, \Sigma_k)\) of the Gaussian components by maximizing the likelihood function.
+
+\subsection*{Conclusion}
+The Gaussian Mixture Model is a flexible approach for modeling data that comes from multiple Gaussian distributions. It is often optimized using the Expectation-Maximization (EM) algorithm, which iteratively estimates the parameters to best fit the data. GMMs are widely used in clustering, anomaly detection, and density estimation applications.
+
+\end{document}
