@@ -42,3 +42,4 @@ _tex/
 *.png
 
 pythontex-files-HW_1/
+.DS_Store

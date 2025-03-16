@@ -124,4 +124,103 @@ MLE is used to estimate the parameters \((w_k, \mu_k, \Sigma_k)\) of the Gaussia
 \subsection*{Conclusion}
 The Gaussian Mixture Model is a flexible approach for modeling data that comes from multiple Gaussian distributions. It is often optimized using the Expectation-Maximization (EM) algorithm, which iteratively estimates the parameters to best fit the data. GMMs are widely used in clustering, anomaly detection, and density estimation applications.
 
+\subsection*{Gaussian Mixture Model Calculation}
+\section*{Step 1: Initializing Parameters}
+
+For this example, let's assume we are fitting a 2-component Gaussian Mixture Model (K=2). We will initialize the parameters as follows:
+
+\begin{enumerate}
+    \item \textbf{Weights:} \( w_1 = w_2 = 0.5 \).
+    \item \textbf{Means (centroids):} 
+    \[
+    \mu_1 =
+    \begin{bmatrix}
+        1 \\
+        2
+    \end{bmatrix}, \quad
+    \mu_2 =
+    \begin{bmatrix}
+        6 \\
+        5
+    \end{bmatrix}.
+    \]
+    \item \textbf{Covariances:} 
+    \[
+    \Sigma_1 =
+    \begin{bmatrix}
+        1 & 0 \\
+        0 & 1
+    \end{bmatrix}, \quad
+    \Sigma_2 =
+    \begin{bmatrix}
+        1 & 0 \\
+        0 & 1
+    \end{bmatrix}.
+    \]
+\end{enumerate}
+\subsubsection*{Step 2. Expectation}
+We calculate the posterior probabilities that each data point belongs to each Gaussian component:
+
+\[
+\gamma_{ik} = \frac{w_k \cdot N(x_i \vert \mu_k , \Sigma_k)}{\sum_{j=1}^{K} w_j \cdot N(x_i \vert \mu_j, \Sigma_j)}
+\]
+
+where:
+\begin{itemize}
+    \item \( \gamma_{ik} \) is the posterior probability (responsibility) that point \( x_i \) belongs to component \( k \).
+    \item \( w_k \) is the weight (prior probability) of component \( k \).
+    \item \( N(x_i \vert \mu_k , \Sigma_k) \) is the multivariate normal probability density function (PDF).
+\end{itemize}
+
+\noindent \textbf{Given Data:}
+\begin{align*}
+X &= \{(1,2), (2,3), (5,5), (6,5)\} \\
+\mu_1 &= \begin{bmatrix} 1 \\ 2 \end{bmatrix}, \quad
+\mu_2 = \begin{bmatrix} 6 \\ 5 \end{bmatrix} \\
+\Sigma_1 &= \Sigma_2 = \begin{bmatrix} 1 & 0 \\ 0 & 1 \end{bmatrix} \\
+w_1 &= w_2 = 0.5
+\end{align*}
+
+\noindent \textbf{Multivariate Normal PDF:}
+\[
+N(x \mid \mu, \Sigma) = \frac{1}{(2\pi)^{d/2} |\Sigma|^{1/2}} 
+\exp \left( -\frac{1}{2} (x - \mu)^T \Sigma^{-1} (x - \mu) \right)
+\]
+Since \(\Sigma\) is the identity matrix, \(\Sigma^{-1} = I\) and \(|\Sigma| = 1\), so the exponent simplifies to:
+
+\[
+(x - \mu)^T (x - \mu)
+\]
+
+\noindent \textbf{Computed Posterior Probabilities:}
+
+\[
+\begin{array}{c|cc}
+x_i & \gamma_{i1} & \gamma_{i2} \\
+\hline
+(1,2) & 0.999999959 & 4.14 \times 10^{-8} \\
+(2,3) & 0.999876605 & 0.000123394 \\
+(5,5) & 6.14 \times 10^{-6} & 0.999993856 \\
+(6,5) & 4.14 \times 10^{-8} & 0.999999959 \\
+\end{array}
+\]
+
+\noindent \textbf{Interpretation:}
+\begin{itemize}
+    \item Points \((1,2)\) and \((2,3)\) strongly belong to Gaussian 1 (\(\mu_1\)).
+    \item Points \((5,5)\) and \((6,5)\) strongly belong to Gaussian 2 (\(\mu_2\)).
+    \item This makes sense because (1,2) and (2,3) are closer to \(\mu_1\), while (5,5) and (6,5) are closer to \(\mu_2\).
+\end{itemize}
+\subsubsection*{Step 3. Maximize}
+\[
+W_k = \frac{1}{N}\sum_{i=1}^{N} \gamma_{ik}
+\]
+\[
+\mu_k = \
+\]
+\section*{Linkage Functions}
+\subsection*{Complex-Linkage}
+\subsection*{Single-Linkage}
+\subsection*{Unweighted average linkage}
+\subsection*{Centroid Linkage}
 \end{document}
