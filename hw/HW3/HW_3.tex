@@ -233,7 +233,7 @@ The output for Guassian Mixture Model is given below:
     
     \item[(c)] In the equation of the Davies-Bouldin Index, \(V_{DB} = \frac{1}{K}\sum_{k=1}^{K} \max_{l\neq k} S_{kl}\), what is \(S_{kl}\)?
     \vspace{0.2in}
-    \\ In the equation of Davies-Bouldin Index: \(\mathbf{S_{kl}}\) represents the measure of separation between the two clusters k and l. It is usually defined and represented as the distance between the centeroids of clusters k and l.
+    \\ In the equation of Davies-Bouldin Index: \(\mathbf{S_{kl}}\) represents the measure of separation between the two clusters k and l.
     \item[(d)] Elaborate the following equation of the partition coefficient index:
 
     \[
@@ -241,15 +241,7 @@ The output for Guassian Mixture Model is given below:
     \]
 
     \noindent The partition coefficient index (\(V_{PC}\)) is a measure used to evaluate the fuzziness of a clustering result. It is defined as the average squared membership values of data points across all clusters. 
-
-    \begin{itemize}
-        \item \( N \) is the total number of data points.
-        \item \( k \) represents the cluster index.
-        \item \( X_n \) is the \( n \)-th data point.
-        \item \( P(k|X_n) \) denotes the membership degree of data point \( X_n \) belonging to cluster \( k \), which is a value between 0 and 1.
-    \end{itemize}
-
-    \noindent The partition coefficient index ranges from \( \frac{1}{K} \) (maximum fuzziness) to 1 (hard clustering). A higher \(V_{PC}\) indicates more distinct clustering, while a lower value suggests a more soft partitioning.
+    \noindent The partition coefficient index ranges from \( \frac{1}{K} \) to 1. A higher \(V_{PC}\) indicates more distinct clustering, while a lower value suggests a more soft partitioning.
 
     \end{itemize}
 
