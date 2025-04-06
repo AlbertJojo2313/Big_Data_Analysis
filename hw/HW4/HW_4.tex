@@ -1,0 +1,250 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage[a4paper, top=0.75in, bottom=1in, left=0.7in, right=0.7in]{geometry} 
+\usepackage{amsmath, amsfonts, amssymb, amsthm, amscd} % Combined math packages
+\usepackage{tikz}     % For drawing matrices
+\usepackage{listings, pythontex} % For code snippets
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{booktabs}
+\usepackage{relsize}
+\usepackage{float} % To control figure placement
+
+\hypersetup{%
+  colorlinks=true,
+  linkcolor=blue,
+  linkbordercolor={0 0 1}
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.2in} % Increased spacing for readability
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%% CHANGE HERE %%%%%%%%%%%%%%%%%%%%
+\newcommand\course{STA4724}
+\newcommand\semester{Spring 2025}
+\newcommand\hwnumber{3}                 % <-- ASSIGNMENT #
+\newcommand\NetIDa{Albert Jojo}          % <-- YOUR NAME
+\newcommand\NetIDb{5390131}              % <-- STUDENT ID #
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%% DO NOT CHANGE HERE %%%%%%%%%%%%%%%%%%%%
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\NetIDa \\ \NetIDb} % Combined name and ID in the left header
+\chead{\textbf{\Large Homework \hwnumber}}
+\rhead{\course \\ \semester}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+
+\sloppy
+
+\section*{Question 1:}
+\textbf{(a).} In python, generate a synthetic dataset (sample size = 10) with three input features and one binary
+label. Split the data into training and testing sets (80 percent training, 20 percent testing). Train a decision
+tree classifier using entropy as the criterion on the training set, make predictions using the testing
+set, and evaluate the performance.
+
+\vspace{.2in}
+
+The code for the decision tree algorithm I used is given below:
+\begin{lstlisting}[language=Python, breaklines=true, columns=flexible, frame=single]
+    #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
+"""
+Created on Sun Apr  6 12:25:17 2025
+
+@author: aj
+"""
+
+import pandas as pd
+import numpy as np
+import pydotplus
+from sklearn.tree import export_graphviz
+from sklearn.tree import DecisionTreeClassifier
+import matplotlib.pyplot as plt
+from io import BytesIO
+import PIL.Image
+import random
+from sklearn.model_selection import train_test_split
+from sklearn.metrics import accuracy_score, classification_report
+
+SAMPLE_SIZE = 10
+
+# Random Seed
+np.random.seed(42)
+random.seed(42)
+
+
+def generate_data():
+    # Features are age, BP, BMI
+    ages = np.random.randint(30, 90, size=SAMPLE_SIZE)
+    bps = np.random.randint(90, 181, size=SAMPLE_SIZE)
+    bmis = np.round(np.random.uniform(18.5, 40.0, size=SAMPLE_SIZE), 1)
+
+    # Generate Labels
+    labels = []
+    for age, bp in zip(ages, bps):
+        if age > 60 and bp > 140:
+            risk = 1
+        else:
+            risk = 0
+
+        if random.random() < 0.2:
+            risk = 1 - risk
+        labels.append(risk)
+
+    # Combine into the final dataset
+    data = list(zip(ages, bps, bmis, labels))
+
+    # Return a dataframe
+    df = pd.DataFrame(data, columns=['Age', 'BP', 'BMI', 'Stroke'])
+
+    return df
+
+
+def img_tree(tree, feature_names):
+    # Convert tree to DOT Format
+    tree_dot = export_graphviz(tree, feature_names, filled=True, out_file=None)
+
+    img_graph = pydotplus.graph_from_dot_data(tree_dot)
+    img = PIL.Image.open(BytesIO(img_graph.create_png()))
+
+    # Display the img
+    plt.imshow(img)
+    plt.axis('off')
+    plt.show()
+
+# Trains and test the model
+
+
+def model(df):
+    X = df.iloc[:, :-1]
+    y = df.iloc[:, -1]
+
+    # Train-test split (80%train, 20%test)
+    X_train, X_test, y_train, y_test = train_test_split(
+        X, y, test_size=0.2, random_state=42)
+
+    model = DecisionTreeClassifier(criterion='entropy', random_state=42)
+    model.fit(X_train, y_train)
+
+    y_pred = model.predict(X_test)
+    accuracy = accuracy_score(y_test, y_pred)
+
+    # Evaluate the performance
+    print(f"Accuracy: {accuracy * 100:.4}%")
+    # print("\nClassification Report:\n", classification_report(y_test, y_pred))
+
+
+stroke_df = generate_data()
+model(stroke_df)
+\end{lstlisting}
+The output is: \boxed{Accuracy: \, 100.0\%}
+\vspace{.2in}
+\\ \textbf{(b).} Repeat this process by hand using the same dataset generated in (a).
+Finish this later
+\vspace{.2in}
+\\ \textbf{(c).} Implement a decision tree using Iris dataset and evaluate its performance
+\vspace{.2in}
+\begin{lstlisting}[language=Python, breaklines=true, columns=flexible, frame=single]
+    #!/usr/bin/env python3
+    # -*- coding: utf-8 -*-
+    """
+    Created on Sun Apr  6 13:30:50 2025
+    
+    @author: aj
+    """
+    
+    import pandas as pd
+    import pydotplus
+    from sklearn.tree import export_graphviz
+    from sklearn.tree import DecisionTreeClassifier
+    import matplotlib.pyplot as plt
+    import PIL.Image
+    from sklearn.model_selection import train_test_split
+    from sklearn.datasets import load_iris
+    from sklearn.metrics import accuracy_score  # Import accuracy_score
+    
+    def img_tree(tree, feature_names):
+        # Convert tree to DOT Format
+        tree_dot = export_graphviz(tree, feature_names=feature_names, filled=True, out_file=None)
+    
+        img_graph = pydotplus.graph_from_dot_data(tree_dot)
+        
+    
+    
+        # Save the img
+        img_graph.write_png('tree_output.png')
+    
+        # Display the img
+        img = PIL.Image.open('tree_output.png')
+        plt.imshow(img)
+        plt.axis('off')
+        plt.show()
+    
+    
+    def model():
+        data = load_iris(as_frame=True)
+    
+        X = data.frame.iloc[:, :-1]
+        y = data.frame.iloc[:, -1]
+    
+        X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+    
+        model = DecisionTreeClassifier(criterion='entropy', random_state=42)
+        model.fit(X_train, y_train)
+    
+        y_pred = model.predict(X_test)
+    
+        # Show the image of the tree
+        img_tree(model, feature_names=X.columns)  
+    
+        accuracy = accuracy_score(y_test, y_pred)  
+        # Evaluate the model
+        print(f"Accuracy: {accuracy * 100:.4f}%")
+    
+    model()
+    
+\end{lstlisting}
+\subsubsection*{Output}
+The output image for the tree is given below:
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.3]{tree_output.png}
+    \caption{Decision Tree Output}
+    \label{Fig:1}
+\end{figure}
+\pagebreak
+\textbf{(d).} Explain the Gini Impurity: \(1 - \sum_{i=1}^{n} p_{i}^{2}\).
+
+\vspace{.2in}
+
+\textbf{Gini Impurity} is a measure of how often a randomly chosen element in the dataset would be incorrectly classified if it were randomly labeled according to the distribution of the labels in the dataset.
+
+The formula for the Gini impurity is:
+\[
+    1 - \sum_{i=1}^{n} p_{i}^{2}
+\]
+where:
+\begin{itemize}
+    \item[n]: is the number of classes in the dataset.
+    \item[\(p_{i}\)]: is the probability of an element being classified into class \(i\).
+    \item[\(p_{i}^{2}\)]: is the square of the probability of class \(i\), representing the proportion of elements that belong to that class.
+\end{itemize}
+
+Lastly, the Gini impurity ranges from 0 to 1:
+\begin{itemize}
+    \item A Gini impurity of 0 means that all the elements belong to a single class (perfect purity).
+    \item A Gini impurity of 1 means that the elements are equally distributed across all classes (maximum impurity).
+\end{itemize}
+
+\end{document}
